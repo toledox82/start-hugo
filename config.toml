@@ -1,3 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+googleAnalytics = ''
+
+[params]
+  description = ''
