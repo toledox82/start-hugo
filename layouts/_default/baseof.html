@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "pt-br" }}">
+    {{ partial "head.html" . }}
+    <body>
+        <main>
+          {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "scripts" "scripts/main.js" . }}
+    </body>
+</html>
