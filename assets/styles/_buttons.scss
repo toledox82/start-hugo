@@ -31,7 +31,7 @@ button {
 
   .dark & {
     color: $primary;
-    background-color: $neon;
+    background-color: $primary;
 
     &:hover {
       background-color: $white;
@@ -65,8 +65,8 @@ button {
     color: $primary;
 
     .dark & {
-      border-color: $neon;
-      color: $neon;
+      border-color: $primary;
+      color: $primary;
 
       &:hover {
         background: transparent;
