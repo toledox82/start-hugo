@@ -1,0 +1,76 @@
+html {
+  font-family: $font-text;
+  font-size: 16px;
+}
+
+body {
+  background: $white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 3.4rem }
+h2 { font-size: 3rem }
+h3 { font-size: 1.75rem }
+h4 { font-size: 1.5rem }
+h5 { font-size: 1.25rem }
+h6 { font-size: 1rem }
+
+@include mobile {
+  h1 { font-size: 2.4rem !important }
+  h2 { font-size: 2.0rem !important }
+  h3 { font-size: 1.5rem !important }
+  h4 { font-size: 1.25rem !important }
+  h5 { font-size: 1.1rem !important }
+  h6 { font-size: 0.9rem !important }
+}
+
+
+main {
+  overflow-x: hidden;
+  
+  p,li {
+    font-size: 1.2rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    padding:0;
+    list-style: none;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+a,
+button,
+path {
+  transition: color ease .5s, opacity ease .5s, background-color ease .5s, border-color ease .5s, fill ease .5s;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  align-self: center;
+}
+
+// Effects
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}

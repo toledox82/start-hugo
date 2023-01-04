@@ -1,0 +1,51 @@
+// Form
+input {
+  font-family: $font-text;
+  font-weight: 400;
+}
+
+form {
+
+}
+
+.field-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  margin: 0 0 1rem 0;
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 5px 10px;
+    height: 44px;
+    font-size: 1rem;
+
+    &.invalid {
+      border-color: $red;
+      box-shadow: 0 0 1px $red;
+    }
+  }
+  option {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    height: auto;
+  }
+
+}

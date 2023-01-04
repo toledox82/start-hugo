@@ -1,0 +1,149 @@
+// Buttons
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.button {
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: $primary;
+  background-color: $secondary;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1em;
+  border: none;
+  border-radius: .25rem;
+  text-transform: uppercase;
+
+  @include phone {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+  }
+
+  .dark & {
+    color: $primary;
+    background-color: $neon;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  .light & {
+    color: $white;
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: lighten($primary, 5);
+    }
+  }
+
+  &.button-large {
+    padding: .8em 2.8em;
+    font-size: 1.3rem;
+  }
+  
+  &.button-alt {
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+
+    .dark & {
+      border-color: $neon;
+      color: $neon;
+
+      &:hover {
+        background: transparent;
+        border-color: $white;
+        color: $white;
+      }
+    }
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+  
+}
+
+.button-full {
+  display: block;
+  width: 100%;
+}
+
+.is-outlined {
+  color: $primary;
+  background: transparent;
+  border: 2px solid $primary;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+
+}
+
+.is-outlined-alt {
+  color: $white;
+  background: transparent;
+  border: 1px solid $white;
+
+  &:hover {
+    .icon svg {
+      fill: $primary !important;
+    }
+  }
+}
+
+.is-link {
+  color: $primary;
+  background: none;
+  padding: .8rem 1.2rem;
+  font-size: 1rem;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
+// Button with Icon
+.button .icon {
+  display: block;
+  float:left;
+  height: 1em;
+  margin-right: 5px;
+
+  svg {
+    height: 1.2em;
+    top: -0.1em;
+    position: relative;
+  }
+}
+
+// Button + Button
+.button + .button {
+  margin-left: 2.5rem;
+
+  @include phone {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}

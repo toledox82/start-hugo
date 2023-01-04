@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Square721 BT';
+  src: url('/fonts/Square721BT-Roman.woff2') format('woff2'),
+      url('/fonts/Square721BT-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Square721 BT';
+  src: url('/fonts/subset-Square721BT-Bold.woff2') format('woff2'),
+      url('/fonts/subset-Square721BT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
